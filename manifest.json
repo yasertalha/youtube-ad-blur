@@ -1,0 +1,14 @@
+{
+  "name": "YouTube Ad Blur + Skip",
+  "version": "1.1",
+  "description": "Blurs only the video and skips skippable YouTube ads automatically",
+  "manifest_version": 3,
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
